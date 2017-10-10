@@ -2,6 +2,8 @@
 I changed the version of the support library from 25 to 26, the behavior of the toolbar changed.
 This repository has reproduced samples.
 
+Issue : https://issuetracker.google.com/issues/67624932
+
 ## [branch:version25](https://github.com/tatsuhama/ToolbarBehaviorChange/tree/version25) Expected
 * compileSdkVersion 25
 * buildToolsVersion "25.0.2"
