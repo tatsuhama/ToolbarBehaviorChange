@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val viewPager = findViewById(R.id.infoViewPager) as ViewPager
+        val viewPager = findViewById<ViewPager>(R.id.infoViewPager)
         viewPager.apply {
             adapter = object : FragmentPagerAdapter(supportFragmentManager) {
                 override fun getCount(): Int = 2
@@ -25,6 +25,6 @@ class MainActivity : AppCompatActivity() {
                 override fun getPageTitle(position: Int): CharSequence = position.toString()
             }
         }
-        (findViewById(R.id.infoViewTab) as TabLayout).setupWithViewPager(viewPager)
+        findViewById<TabLayout>(R.id.infoViewTab).setupWithViewPager(viewPager)
     }
 }
